@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOD1.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <!--Grid Resources-->
+
+            <Label Text="Welcome to Page 1 of PDC60!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            
+            <Grid>
+                <Grid.Resources>
+                    <Style x:Key="SubmitButton" TargetType="Button">
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="BackgroundColor" Value="Green"/>
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="CornerRadius" Value="17"/>
+                    </Style>
+
+                    <Style x:Key="WarningButton" TargetType="Button">
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="BackgroundColor" Value=" Red"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="CornerRadius" Value="17"/>
+                    </Style>
+
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="Page 1"  Style = "{StaticResource SubmitButton}" Grid.Row="0" />
+                <Button Text="Page 2" Style="{StaticResource WarningButton}" Grid.Row="1" />
+                <Button Text="Submit"  Style = "{StaticResource SubmitButton}" Grid.Row="2" />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

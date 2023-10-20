@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOD1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#5B7C99" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to PDC60!" HorizontalTextAlignment="Center" TextColor="#FDE74C" FontSize="50"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10"/>
+        <Label Text="Learn a lot about Xamarin Forms in Professional Domain Course 6." HorizontalTextAlignment="Center" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Choose a Page which has " />
+                        <Span Text="Different levels of ResourceDictionary reference. " FontAttributes="Bold"/>
+                        <Span Text="Give it a try!"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Clicked="OpenPage1">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="BackgroundColor" Value="#FDE74C"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="CornerRadius" Value="20"/>
+                    <Setter Property="Text" Value="PAGE 1"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Clicked="OpenPage2">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="BackgroundColor" Value="#E5E9EC"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="CornerRadius" Value="20"/>
+                    <Setter Property="Text" Value="PAGE 2"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Text="Enter"></Button>
+
+    </StackLayout>
+
+</ContentPage>

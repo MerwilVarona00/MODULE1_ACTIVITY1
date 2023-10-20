@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOD1.Page2">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="BackgroundColor" Value="#FDE74C" />
+                <Setter Property="TextColor" Value="#5B7C99" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="WidthRequest" Value="100" />
+                <Setter Property="HeightRequest" Value="100" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="BackgroundColor" Value="#E5E9EC"/>
+                <Setter Property="FontSize" Value="29"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Page 2 of PDC60!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Button1" />
+            <Button Text="Button2" />
+            <Button Text="Button3" />
+            <Button Text="Button4" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
